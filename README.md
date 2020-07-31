@@ -8,10 +8,10 @@ This Dockerfile may be used to bootstrap a Ceph cluster with all the Ceph daemon
 - osd_directory deploys one or multiple OSDs in a single container using a prepared directory (used in scenario where the operator doesn't want to use --privileged=true)
 - osd_directory_single deploys an single OSD per container using a prepared directory (used in scenario where the operator doesn't want to use --privileged=true)
 - osd_ceph_disk deploys an OSD using ceph-disk, so you have to provide a whole device (ie: /dev/sdb)
+- mds deploys a MDS
+- rgw deploys a Rados Gateway
 ```
 
-mds deploys a MDS
-rgw deploys a Rados Gateway
 
 ### Usage
 You can use this container to bootstrap any Ceph daemon.

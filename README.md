@@ -3,11 +3,11 @@
 ### Daemon container
 This Dockerfile may be used to bootstrap a Ceph cluster with all the Ceph daemons running. To run a certain type of daemon, simply use the name of the daemon as $1. Valid values are:
 ```
-mon deploys a Ceph monitor
-osd deploys an OSD using the method specified by OSD_TYPE
-osd_directory deploys one or multiple OSDs in a single container using a prepared directory (used in scenario where the operator doesn't want to use --privileged=true)
-osd_directory_single deploys an single OSD per container using a prepared directory (used in scenario where the operator doesn't want to use --privileged=true)
-osd_ceph_disk deploys an OSD using ceph-disk, so you have to provide a whole device (ie: /dev/sdb)
+- mon deploys a Ceph monitor
+- osd deploys an OSD using the method specified by OSD_TYPE
+- osd_directory deploys one or multiple OSDs in a single container using a prepared directory (used in scenario where the operator doesn't want to use --privileged=true)
+- osd_directory_single deploys an single OSD per container using a prepared directory (used in scenario where the operator doesn't want to use --privileged=true)
+- osd_ceph_disk deploys an OSD using ceph-disk, so you have to provide a whole device (ie: /dev/sdb)
 ```
 
 mds deploys a MDS

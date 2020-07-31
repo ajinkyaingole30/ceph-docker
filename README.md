@@ -29,8 +29,8 @@ Given that monitors can not communicate through a NATed network, we need to use 
 $ sudo docker run -d --net=host \
 -v /etc/ceph:/etc/ceph \
 -v /var/lib/ceph/:/var/lib/ceph \
--e MON_IP=192.168.0.20 \
--e CEPH_PUBLIC_NETWORK=192.168.0.0/24 \
+-e MON_IP=10.20.11.20 \
+-e CEPH_PUBLIC_NETWORK=10.20.0.0/24 \
 ceph/daemon:latest-mimic mon
 ```
 Here are the options available to you.
